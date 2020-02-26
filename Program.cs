@@ -36,10 +36,7 @@ namespace Dealership
           NumberWorthBuying++;
           if(automobile.LowMileage(maxMileage) && automobile.ShadeMatch(userShade))
           {
-            Console.WriteLine(automobile.ShadeMatch(userShade));
-            Console.WriteLine(automobile.GetShade());
             CarsMatchingSearch.Add(automobile);
-            Console.WriteLine(CarsMatchingSearch);
           }
         }          
       }

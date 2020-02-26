@@ -47,7 +47,7 @@ namespace Dealership.Models
     }
     public bool ShadeMatch(string userShade)
     {
-      return (_shade.StartsWith(userShade));
+      return (_shade.Contains(userShade));
     }
 
     public bool LowMileage(int maxMileage)
