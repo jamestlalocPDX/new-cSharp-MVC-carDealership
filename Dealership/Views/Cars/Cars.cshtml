@@ -1,0 +1,33 @@
+@using Dealership.Models;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cars</title>
+</head>
+
+<body>
+  <h1>These are all of our cars.</h1>
+  @if (Model.Count == 0)
+  {
+    <p>There are no cars at the dealership.</p>
+  }
+  <ul>
+  @foreach (Car car in Model)
+  {
+    <li>@car.MakeModel
+      <ul> 
+        <li>Price: @car.Price, Miles: @car.Miles, Description: @car.Message, Shade: @car.Shade</li>
+      </ul>
+    </li>
+  }
+  </ul>
+  <form action="clearCars" method="post">
+    <button type="submit">Clear List</button>
+  </form>
+
+</body>
+</html>

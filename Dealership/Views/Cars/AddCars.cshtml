@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add Cars</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Add a new car.</h1>
+      <form action="/addCar" method="post">
+        <div class="form-group">
+          <label for="makemodel">Make and Model</label>
+          <input type="text" name="makeModel" class="form-control" id="makeModel">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" name="price" class="form-control" id="price">
+        </div>
+        <div class="form-group">
+          <label for="miles">Miles</label>
+          <input type="text" name="miles" class="form-control" id="miles">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input type="text" name="message" class="form-control" id="message">
+        </div>
+        <div class="form-group">
+          <label for="shade">Shade</label>
+          <input type="text" name="shade" class="form-control" id="shade">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <a href="/cars"><button class="btn btn-warning">See all cars</button></a>
+  </div>
+</body>
+</html>
